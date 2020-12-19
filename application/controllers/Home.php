@@ -63,5 +63,41 @@ class Home extends CI_Controller
         echo "<script>alert('Data telah ditambahkan'); document.location.href='../';</script>";
         }
     }
-    
+    public function update($id)
+    {
+        $data['tampilan'] = $this->home_model->Tampilan($id);
+        $this->load->view('tampil/update', $data);
+    }
+    public function updatedata($id){
+
+    //mengambil waktu saat ini
+    date_default_timezone_set('Asia/Jakarta');
+    $tanggal = date("Y-m-d H:i:s");
+
+    //mengolah file
+    $file = $_FILES['file'];
+    if($file = ''){}else{
+        $config['upload_path'] = './uploads';
+        $config['allowed_types'] = 'xls|xlsx|ppt|pptx|doc|docx|pdf';
+
+        $this->load->library('upload',$config);
+        if(!$this->upload->do_upload('file')){
+            echo "Gagal Upload";
+        }else{
+            $file = $this->upload->data('file_name');
+        }
+    }
+
+        $judul = $this->input->post('judul');
+        $aspek = $this->input->post('aspek');
+
+        $this->db->set('judul', $judul);
+        $this->db->set('aspek', $aspek);
+        $this->db->set('tanggal', $tanggal);
+        $this->db->set('file', $file);
+        $this->db->where('id', $id);
+        $this->db->update('laporan');
+        echo "<script>alert('Data telah diperbaharui'); document.location.href='../';</script>";
+    }
+
 }

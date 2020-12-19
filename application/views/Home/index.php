@@ -34,7 +34,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                           <?php } ?>
                           Lampiran : <?php echo $value["file"]; ?><br>
                           Waktu : <?php echo $value["tanggal"]; ?><br>
-                        <a href="<?php echo base_url() ?>home/tampil/<?php echo $value["id"] ?>">Selengkapnya>>></a>
+                        <a href="<?php echo base_url() ?>home/tampil/<?php echo $value["id"] ?>">Selengkapnya...</a>
                     <div style="clear: both"></div>
                 <br>
                 <hr>

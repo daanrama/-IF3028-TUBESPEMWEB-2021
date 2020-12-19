@@ -99,7 +99,17 @@ Validasi **wajib** dilakukan pada *client-side*, dengan menggunakan **javascript
 Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/komentar`.
 
 ### Penjelasan Teknis
-`Silakan isi bagian ini dengan penjelasan anda, sesuai Petunjuk Pengerjaan di atas.`
+o Ubah Laporan/komentar
+  Disini Pengguna dapat mengubah laporan/komentar yang telah dibuat. Form yang digunakan mempunyai tampilan yang sama dengan 
+  form tanya yang dimana field-field yang ada sudah terisi. Mengunakan HTTP POST untuk menyimpan perubahan.
+o Hapus Laporan/komentar
+  Disini Pengguna dapat menghapus laporan/komentar yang telah dibuat. konfirmasi penghapusan dilakukan dengan menggunakan `javascript`.
+o Lihat Laporan/komentar
+  Disini Pengguna dapat melihat laporan/komentar. Terdapat informasi aspek dan perihal yang dilaporkan,
+  (Dosen, Staff, Mahasiswa, Infrastruktur dan Pengajaran ), isi laporan/komentar, waktu pengiriman komentar `datetime` 
+  dan file lapiran. 
+o Validasi
+  Disini Pengguna diwajibkan memvalidasi, dimana tiap field pada form tidak boleh kosong, dan juga minimal jumlah kata dalam laporan/komentar minimal terdiri dari 20 kata.
 
 ### Knowledge
 Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaikan tugas ini.

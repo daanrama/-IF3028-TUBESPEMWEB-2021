@@ -6,8 +6,6 @@ form{
   background-color: #FBFAEE;
   font-family: calibri;
 }
-
-
 .judul{
   text-align:center;
   font-size: 50px;

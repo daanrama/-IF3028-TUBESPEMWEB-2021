@@ -1,14 +1,16 @@
 <?php
 class Home extends CI_Controller
 {
-    public function __construct(){
+    public function __construct()
+    {
         parent::__construct();
         $this->load->helper("url");
         $this->load->model('home_model');
         $this->load->library('form_validation');
     }
  
-    public function index(){
+    public function index()
+    {
         $data['laporan'] = $this->home_model->Laporan();
         $this->load->view('home/index', $data);
     }
@@ -24,12 +26,20 @@ class Home extends CI_Controller
         $data['tampilan'] = $this->home_model->Tampilan($id);
         $this->load->view('tampil/index', $data);
     }
+    
+    public function hapus($id)
+    {
+        $this->home_model->hapus($id);
+        redirect('../');
+    }
 
-    public function tambah(){
+    public function tambah()
+    {
         $this->load->view('tambah/index');
     }
 
-    public function tambahbaru(){
+    public function tambahbaru()
+    {
     $this->form_validation->set_rules('judul','Judul','required[20]');
         if($this->form_validation->run() == FALSE){
 
@@ -68,13 +78,11 @@ class Home extends CI_Controller
         $data['tampilan'] = $this->home_model->Tampilan($id);
         $this->load->view('tampil/update', $data);
     }
-    public function updatedata($id){
-
-    //mengambil waktu saat ini
+    public function updatedata($id)
+    {
     date_default_timezone_set('Asia/Jakarta');
     $tanggal = date("Y-m-d H:i:s");
 
-    //mengolah file
     $file = $_FILES['file'];
     if($file = ''){}else{
         $config['upload_path'] = './uploads';

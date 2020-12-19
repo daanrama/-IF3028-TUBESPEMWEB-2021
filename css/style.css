@@ -1,0 +1,77 @@
+body {
+  background-color: #FBFAEE;
+  font-family:calibri;
+}
+.cari {
+    padding: 20px 15px;
+    background-color:#FBFAEE;
+    border:1px solid #000000;
+    width: 600px;
+}
+.button {
+    position:relative;
+    padding:20px 15px;
+    left:-8px;
+    border:1px solid #000000;
+    background-color:#FBFAEE;
+    color:#000000;
+}
+.button:hover  {
+    background-color:#fafafa;
+    color:#207cca;
+}
+
+.judul{
+  text-align:center;
+  font-family: calibri;
+  font-size: 50px;
+
+}
+.container{
+    margin: auto;
+    margin-top: 50px;
+    width: 1000px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 25px;
+    padding-left: 25px;
+    font-family: calibri;
+    font-size: 18px;
+}
+.isi {
+    padding: 0px 10px;
+    background-color:#FBFAEE;
+    border:1px solid #000000;
+    font-family: calibri;
+    font-size: 14px;
+    text-align: left;
+    width :980px;
+    line-height: 1.5;
+}
+.aspek {
+    font-size: 16px;
+    font-family: calibri;
+    line-height: 1.5;
+    padding: 7px 9px;
+    background-color:#FBFAEE;
+ 
+  }
+.file{
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+.submit{
+text-align: right;
+  padding: 7px 15px;
+  line-height: 1;
+  background-color:#FBFAEE;
+  font-family: calibri;
+  font-size: 18px;
+
+}
+
+.span1 {
+  float: right;
+}

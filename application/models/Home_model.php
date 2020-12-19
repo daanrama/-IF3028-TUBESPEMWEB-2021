@@ -25,5 +25,11 @@ class Home_model extends CI_Model
 	{
 		return $this->db->get_where('laporan', array('id'=>$id))->row_array();
 	}
+	
+	public function hapus($id)
+	{
+		$this->db->where('id', $id);
+		$this->db->delete('laporan');
+	}
 }
 ?>

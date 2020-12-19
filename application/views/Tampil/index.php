@@ -25,9 +25,9 @@
 		<br>
 		<br>
   		<span class="span1"><a href="<?php echo base_url() ?>home/hapus/<?php echo $tampilan["id"]?>" onclick="return confirm('apakah ingin dihapus?');">Hapus Laporan/Komentar <i class="fa fa-times" aria-hidden="true"></i></a>
-  			<a href="<?php echo base_url() ?>home/update/<?php echo $tampilan["id"]?>" >Ubah laporan/komentar</a>
+  			<a href="<?php echo base_url() ?>home/update/<?php echo $tampilan["id"]?>" >Ubah Laporan/Komentar</a>
   		</span>
-  		<span class="span2">Waktu :<?php echo $tampilan["tanggal"]; ?>		Aspek:<?php echo $tampilan["aspek"]; ?></span>
+  		<span class="span2">Waktu : <?php echo $tampilan["tanggal"]; ?>		Aspek: <?php echo $tampilan["aspek"]; ?></span>
 		</p>
 		<br>
 		<hr>
